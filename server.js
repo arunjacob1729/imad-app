@@ -9,6 +9,39 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+
+var articles = {article-one:{title:'arun1', head:'singam' date:'aug 10 2017' content:' hello moto'},
+                 article-one:{title:'arun2', head:'singam' date:'aug 11 017' content:' hello moto2'},
+                 article-one:{title:'arun3', head:'singam' date:'aug 12 2017' content:' hello moto3'}
+};
+
+function createTemplate(data)
+{
+var title = data.title;
+var head = data.head;
+var date = data.date;
+var content = data.content; 
+    
+}
+    
+var htmlTemplate = "
+<html>
+<head>
+<title>
+${title}
+</title>
+<body>
+<h5>${head}</h5>
+<div>
+${date}
+</div>
+<p>
+${content}
+</p>
+</body>
+</html>";
+return htmlTemplate;
+
 app.get('/article-one',function(req, res){
    res.send('article one will be here');
 });
