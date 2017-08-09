@@ -22,7 +22,6 @@ var head = data.head;
 var date = data.date;
 var content = data.content; 
     
-}
     
 var htmlTemplate = "
 <html>
@@ -41,13 +40,15 @@ ${content}
 </body>
 </html>";
 return htmlTemplate;
+}
 
-app.get('/article-one',function(req, res){
+app.get('/:articleName',function(req, res){
    res.send('article one will be here');
 });
 
 app.get('/article-two',function(req, res){
-   res.send('article two will be here');
+    var articleName = req.params.articleName;
+   res.send(createTemplate(articles[articleName]));
 });
 
 
