@@ -10,9 +10,9 @@ app.get('/', function (req, res) {
 });
 
 
-var articles = {article-one:{title:'arun1', head:'singam' date:'aug 10 2017' content:' hello moto'},
-                 article-one:{title:'arun2', head:'singam' date:'aug 11 017' content:' hello moto2'},
-                 article-one:{title:'arun3', head:'singam' date:'aug 12 2017' content:' hello moto3'}
+var articles = {articleone:{title:'arun1', head:'singam' date:'aug 10 2017' content:' hello moto'},
+                 articletwo:{title:'arun2', head:'singam' date:'aug 11 017' content:' hello moto2'},
+                 articlethree:{title:'arun3', head:'singam' date:'aug 12 2017' content:' hello moto3'}
 };
 
 function createTemplate(data)
