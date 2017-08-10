@@ -23,7 +23,7 @@ var date = data.date;
 var content = data.content; 
     
     
-var htmlTemplate = "
+var htmlTemplate = `
 <html>
 <head>
 <title>
@@ -38,7 +38,7 @@ ${date}
 ${content}
 </p>
 </body>
-</html>";
+</html>`;
 return htmlTemplate;
 }
 
