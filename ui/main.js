@@ -4,9 +4,9 @@ console.log('Loaded!');
 var element = document.getElementById('main-text');
 element.innerHTML='Hello Dude';
 var img = document.getElementByID('madi');
-var marginLeft=0;
+var marginLeft = 0;
 function moveRight(){
-    marginLeft = marginLeft + 1;
+    marginLeft = marginLeft + 10;
    img.style.marginLeft = marginLeft +"px";
 }
 
