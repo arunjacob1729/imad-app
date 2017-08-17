@@ -6,7 +6,7 @@ element.innerHTML='Hello Dude';
 var img = document.getElementByID('madi');
 var margin;
 function moveLeft(){
-    vmargin= margin - 1;
+    margin= margin - 1;
    img.style.margin= margin +"px";
 }
 
