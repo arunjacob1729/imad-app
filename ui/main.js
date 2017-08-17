@@ -4,10 +4,10 @@ console.log('Loaded!');
 var element = document.getElementById('main-text');
 element.innerHTML='Hello Dude';
 var img = document.getElementByID('madi');
-var margin;
-function moveLeft(){
-    margin= margin - 1;
-   img.style.margin= margin +"px";
+var marginLeft=0;
+function moveRight(){
+    marginLeft = marginLeft + 1;
+   img.style.marginLeft = marginLeft +"px";
 }
 
 img.onClick = function(){
