@@ -16,8 +16,8 @@ button.onclick = function (){
             
         }
         
-    }
+    };
     
     request.open(GET,"http://arunjacob1729.imad.hasura-app.io/" , true);
     request.send(null);
-}
+};
