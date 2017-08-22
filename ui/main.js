@@ -5,7 +5,7 @@ button.onclick = function (){
     var request = new XMLHttpRequest();
     request.onreadystatechange = function (){
         
-        if(request.readystate === XMLHttpRequest.DONE)
+        if(request.readState === XMLHttpRequest.DONE)
         {
             if (request.status === 200)
             {
@@ -18,6 +18,6 @@ button.onclick = function (){
         
     };
     
-    request.open(GET,"http://arunjacob1729.imad.hasura-app.io/" , true);
+    request.open(GET, "http://arunjacob1729.imad.hasura-app.io/" , true);
     request.send(null);
 };
